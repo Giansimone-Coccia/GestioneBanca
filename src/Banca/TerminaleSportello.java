@@ -1,12 +1,19 @@
 package Banca;
 import java.util.Scanner;
-
+/**
+ * Classe per la gestione del terminale da uno sportello
+ * @author gians_ji5genm
+ *
+ */
 public class TerminaleSportello {
 	Scanner input = new Scanner(System.in);
 
 	private int utenteDesignato;
 	
-	//Costruttore
+	/**
+	 * Costruttore
+	 * @param array Array di Utente
+	 */
 	public TerminaleSportello(Utente[] array) {
 
 		boolean tf = true;
@@ -21,7 +28,11 @@ public class TerminaleSportello {
 		} while(tf);
 	}
 	
-	//Metodo per effettuare il login
+	/**
+	 * Metodo per effettuare il login
+	 * @param array Array di Utente
+	 * @return true se operazione eseguita con successo, false altrimenti
+	 */
 	public boolean login(Utente[] array) {
 
 		String utente, tipoUtente, password;
@@ -45,7 +56,10 @@ public class TerminaleSportello {
 		return false;
 	}
 	
-	//Metodo che rispecchia l'impostazione del menù del terminale
+	/**
+	 * Metodo che rispecchia l'impostazione del menù del terminale
+	 * @param utente
+	 */
 	public void menu(Utente utente) {
 
 		int valore;

@@ -1,6 +1,10 @@
 package Banca;
 import java.util.Scanner;
-
+/**
+ * Classe per la gestione generale della banca
+ * @author gians_ji5genm
+ *
+ */
 public class GestioneBanca {
 
 	public static void main(String[] args) {
